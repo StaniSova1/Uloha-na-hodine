@@ -29,7 +29,7 @@ int* Generator(int n) {
 	int i;
 	srand(time(NULL));
 	for (i=0;i<n;i++) {
-		*(pole+i)=rand()%98-1;
+		*(pole+i)=rand()%99+1;
 	}
 	return(pole);
 }
