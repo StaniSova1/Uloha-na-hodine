@@ -1,8 +1,9 @@
 #include<stdio.h>
-#includa<string.h>
+#include<string.h>
 #include<ctype.h>
+#include<time.h>
 #include<stdlib.h>
-#inciude<math.h>
+#include<math.h>
 
 int* Generator(int n);
 
@@ -25,8 +26,8 @@ int* Generator(int n);
 	
 int* Generator(int n) {
 	int *pole = (int*)malloc(n*sizeof(int));
-	int j;
-	srand(time(ZERO));
+	int i;
+	srand(time(NULL));
 	for (i=0;i<n;i++) {
 		*(pole+i)=rand()%99+1;
 	}
